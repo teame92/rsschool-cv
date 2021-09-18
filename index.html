@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Volosevich Kirill CV</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <figure>
+            <img class="header__ava" src="./img/avame.jpg" alt="Volosevich Kirill photo" />
+        </figure>
+        <div class="header__info">
+            <h1 class="header__title">Kirill Volosevich</h1>
+            <p class="header__subtitle">Junior Front-end Developer</p>
+            <h2 class="header__contacts">Contacts</h2>
+            <ul class="header__contacts-list">
+                <li class="header__email"> <a href="mailto:keriaz@mail.ru">E-mail</a></li>
+                <li class="header__phone"> <a href="tel:+375297225668">+375 29 722-56-68</a></li>
+                <li class="header__linkedin"> <a href="https://www.linkedin.com/in/kirill-volosevich-95046a207/">Linkedin</a></li>
+                <li class="header__telega"> <a href="https://t.me/teame92">Telegram</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <aside class="main__aside">
+                <div class="main__aside-education main__aside-container">
+                    <h2 class="main__aside-title">Education</h2>
+                    <h4 class="degree">Brest State Technical University</h4>
+                    <p class="time">2009 - 2015</p>
+                </div>
+                <div class="main__aside-skills main__aside-container">
+                    <h2 class="main__aside-title">Skills</h2>
+                    <ul class="main__aside-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>AJAX</li>
+                        <li>SPA</li>
+                        <li>Promise</li>
+                        <li>Events</li>
+                        <li>Git</li>
+                        <li>English - A2</li>
+                    </ul>
+                </div>
+                <div class="main__aside-interests main__aside-container">
+                    <h2 class="main__aside-title">Interests</h2>
+                    <ul class="main__aside-list">
+                        <li>Playing</li>
+                        <li>Traveling</li>
+                        <li>Reading</li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="section">
+                <div class="section__summary">
+                    <h2 class="section__title">About me</h2>
+                    <p class="section__text">I work as a dealer in a casino. A year ago I became interested in HTML, CSS, JS and now I'm sure - I want to become Front-End Developer. I have still known a little bit about programming, but I want to study and get experience on real
+                        projects.
+                    </p>
+                </div>
+                <div class="section__code">
+                    <h2 class="section__title">Code example</h2>
+                    <h3 class="section__subtitle">Javascript</h3>
+                    <pre class="code-example">
+                        <code>
+                            const reduce = (array, cb, initialValue) => {
+                                let sum = initialValue
+                                for (let i = 0; i &lt; array.length; i++) {
+                                    sum = cb(sum, array[i], i, array)
+                                }
+                                return sum
+                            }
+                        </code>
+                    </pre>
+                </div>
+                <div class="section__experiences">
+                    <h2 class="section__title">Experiences</h2>
+                    <h3 class="job-title"><a href="https://htmlacademy.ru">HTML Academy</a></h3>
+                    <h3 class="job-title"><a href="https://www.it-academy.by">IT-Academy</a></h3>
+                    <div class="section__experiences-details">
+                        <p>I graduated from the IT Academy in web application development and now I want to develop in this direction!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper wrapper__footer">
+            <div class="footer__inner">
+                <a class="git" href="https://github.com/teame92"></a>
+                <p>2021</p>
+                <a class="rss" href="https://rs.school/js/"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
