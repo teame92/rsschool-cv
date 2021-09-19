@@ -1,0 +1,187 @@
+.body {
+    background-image: url(./img/chess.png);
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+    background-color: #f06c64;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+}
+
+.header__info {
+    color: #F0D8D9;
+}
+
+.header__ava {
+    width: 50%;
+    box-shadow: 0px 2px 10px 1px rgb(255 255 255 / 40%);
+    border-radius: 5%;
+    border: 5px solid #F0D8D9;
+}
+
+.header__contacts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.header__contacts-list a {
+    text-decoration: none;
+    color: #F0D8D9;
+}
+
+.header__contacts-list li {
+    margin-bottom: 2px;
+}
+
+.main {
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+    background-color: #f06c64;
+}
+
+.main__aside {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    color: #F0D8D9;
+    box-shadow: 10px -6px 10px 0px #888;
+}
+
+.main__aside-container {
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.main__aside-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.main__aside-list {
+    padding-left: 1rem;
+}
+
+.section {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    padding: 0 60px;
+}
+
+.section__experiences a {
+    text-decoration: none;
+    color: #F0D8D9;
+    font-size: 1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.code-example {
+    display: flex;
+    justify-content: center;
+    white-space: pre-line;
+    background-color: #D6564F;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+.job-title {
+    margin: 0.5rem 0;
+}
+
+.footer {
+    width: 100%;
+}
+
+.wrapper__footer {
+    background-color: #2d303a;
+}
+
+.footer__inner {
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.git {
+    background-image: url(./img/github.svg);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.rss {
+    background-image: url(./img/rs-logo.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 70px;
+    height: 25px;
+}
+
+.footer__inner p {
+    color: #F0D8D9;
+}
+
+@media screen and (max-width: 676px) {
+    .header {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .code-example {
+        font-size: 0.8125rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .wrapper {
+        flex-direction: column-reverse;
+    }
+    .main__aside {
+        width: 70%;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+    .main__aside-container {
+        padding: 0;
+        margin: 10px 0;
+    }
+    .section {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .footer__inner {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    html {
+        font-size: 12px;
+    }
+    .header__ava {
+        width: 100px;
+    }
+}
