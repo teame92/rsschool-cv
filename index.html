@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Volosevich Kirill CV</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <figure>
+            <img class="header__ava" src="./img/avame.jpg" alt="Volosevich Kirill photo" />
+        </figure>
+        <div class="header__info">
+            <h1 class="header__title">Kirill Volosevich</h1>
+            <p class="header__subtitle">Junior Front-end Developer</p>
+            <h2 class="header__contacts">Contacts</h2>
+            <ul class="header__contacts-list">
+                <li class="header__email"> <a href="mailto:keriaz@mail.ru">E-mail</a></li>
+                <li class="header__phone"> <a href="tel:+375297225668">+375 29 722-56-68</a></li>
+                <li class="header__linkedin"> <a href="https://www.linkedin.com/in/kirill-volosevich-95046a207/">Linkedin</a></li>
+                <li class="header__telega"> <a href="https://t.me/teame92">Telegram</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <aside class="main__aside">
+                <div class="main__aside-education main__aside-container">
+                    <h2 class="main__aside-title">Education</h2>
+                    <h4 class="degree">Brest State Technical University</h4>
+                    <p class="time">2009 - 2015</p>
+                </div>
+                <div class="main__aside-skills main__aside-container">
+                    <h2 class="main__aside-title">Skills</h2>
+                    <ul class="main__aside-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>AJAX</li>
+                        <li>SPA</li>
+                        <li>Promise</li>
+                        <li>Events</li>
+                        <li>Git</li>
+                        <li>English - A2</li>
+                    </ul>
+                </div>
+                <div class="main__aside-interests main__aside-container">
+                    <h2 class="main__aside-title">Interests</h2>
+                    <ul class="main__aside-list">
+                        <li>Playing</li>
+                        <li>Traveling</li>
+                        <li>Reading</li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="section">
+                <div class="section__summary">
+                    <h2 class="section__title">About me</h2>
+                    <p class="section__text">I work as a dealer in a casino. A year ago I became interested in HTML, CSS, JS and now I'm sure - I want to become Front-End Developer. I have still known a little bit about programming, but I want to study and get experience on real
+                        projects.
+                    </p>
+                </div>
+                <div class="section__code">
+                    <h2 class="section__title">Code example</h2>
+                    <h3 class="section__subtitle">Javascript</h3>
+                    <pre class="code-example">
+                        <code>
+                            const reduce = (array, cb, initialValue) => {
+                                let sum = initialValue
+                                for (let i = 0; i &lt; array.length; i++) {
+                                    sum = cb(sum, array[i], i, array)
+                                }
+                                return sum
+                            }
+                        </code>
+                    </pre>
+                </div>
+                <div class="section__experiences">
+                    <h2 class="section__title">Experiences</h2>
+                    <h3 class="job-title"><a href="https://htmlacademy.ru">HTML Academy</a></h3>
+                    <h3 class="job-title"><a href="https://www.it-academy.by">IT-Academy</a></h3>
+                    <div class="section__experiences-details">
+                        <p>I graduated from the IT Academy in web application development and now I want to develop in this direction!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper wrapper__footer">
+            <div class="footer__inner">
+                <a class="git" href="https://github.com/teame92"></a>
+                <p>2021</p>
+                <a class="rss" href="https://rs.school/js/"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        console.log(`Ваша оценка - 130 баллов 
+Отзыв по пунктам ТЗ:
+Не выполненные/не засчитанные пункты:
+1) есть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится адаптивным. 
+
+2) CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий 
+
+3) есть видеорезюме автора CV на английском языке. Видеорезюме встраивается в страницу CV как видео, а не в виде кнопки или ссылки. Продолжительность видео 3-5 минут (±15 секунд). В описание видео на YouTube добавлена ссылка на его транскрипцию на английском языке (например, в документе Google Docs). 
+
+Выполненные пункты:
+1) вёрстка валидная. Проверить валидность вёрстки: https://validator.w3.org/ 
+
+2) вёрстка семантическая. В коде страницы присутствуют семантические теги HTML5, например, article, aside, figure, figcaption, footer, header, main, nav, section, используются заголовки h1-h6. 2 балла за каждый уникальный семантический тег HTML5 и за каждый уникальный заголовок h1-h6, но не больше 20 баллов. Заголовок h1 может быть только один 
+
+3) для оформления СV используются css-стили. 1 балл за каждый стилизованный элемент, но не больше 10 баллов 
+
+4) контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы 
+
+5) вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется 
+
+6) на странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt (может быть пустым) 
+
+7) контакты для связи и перечень навыков оформлены в виде списка ul > li 
+
+8) CV содержит контакты, краткую информацию о себе, навыки, образование, уровень английского 
+
+9) CV содержит пример вашего кода (например, решение задачи с сайта codewars) с подсветкой кода 
+
+10) CV выполнено на английском языке 
+
+11) выполнены требования к репозиторию: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, указана дата дедлайна, выполнена самооценка (самооценку расписываем по пунктам критериев оценки, указывая балл за каждый пункт) 
+
+12) дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию 
+
+`)
+    </script>
+</body>
+
+</html>
